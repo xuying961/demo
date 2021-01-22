@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 200px auto;
+            background-color: pink;
+            animation: dong 1s infinite linear;
+            /* animation: two 1s infinite linear; */
+            border-radius: 20px;
+
+        }
+
+        @keyframes dong {
+            from {
+                transform: translateX(0) rotate(0deg) scale(0);
+            }
+
+            to {
+                transform: translateX(100px) rotate(360deg) scale(2);
+            }
+        }
+
+        @keyframes two {
+            0% {
+                width: 200px;
+                height: 200px;
+                /* transform: ; */
+            }
+
+            50% {
+                width: 800px;
+                height: 200px;
+            }
+
+            100% {
+                width: 800px;
+                height: 800px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

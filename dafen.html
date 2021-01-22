@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 100px auto;
+            background-color: pink;
+            animation: w 3s linear infinite;
+            /* transform-origin: bottom right; */
+        }
+
+        .che {
+            position: absolute;
+            top: 0;
+            right: 200px;
+            width: 100px;
+            height: 200px;
+            background-color: red;
+            border-radius: 100px 0 0 100px;
+            transform-origin: bottom right;
+        }
+
+        .che:nth-child(2) {
+            transform: rotate(90deg);
+            background-color: yellow;
+        }
+
+        .che:nth-child(3) {
+            transform: rotate(180deg);
+            background-color: violet;
+        }
+
+        .che:nth-child(4) {
+            transform: rotate(270deg);
+            background-color: skyblue;
+        }
+
+        @keyframes w {
+            form {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+<body>
+    <div class="box">
+        <div class="che"></div>
+        <div class="che"></div>
+        <div class="che"></div>
+        <div class="che"></div>
+    </div>
+</body>
+
+</html>

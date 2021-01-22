@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: skyblue;
+        }
+
+        div {
+            width: 174px;
+            height: 126px;
+            background: url(./images/fish-12-126.png);
+            animation: one 1s steps(12) infinite, two 5s infinite linear;
+        }
+
+        div:nth-child(2n+1) {
+            animation-duration: 1s, 10s;
+        }
+
+        @keyframes one {
+            form {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: 0 -1512px;
+            }
+        }
+
+        @keyframes two {
+            0% {
+                transform: translateX(0px) rotate(0deg);
+            }
+
+            25% {
+                transform: translateX(800px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateX(800px) rotate(180deg);
+            }
+
+            75% {
+                transform: translateX(0px) rotate(180deg);
+            }
+
+            100% {
+                transform: translateX(0px) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

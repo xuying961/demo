@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        list-style: none;
+        border: 1px solid #000;
+        width: 300px;
+        height: 100px;
+        margin: 200px auto;
+
+
+    }
+
+    li {
+        position: relative;
+        float: left;
+        width: 100px;
+        height: 100px;
+        transition: 1s;
+        text-align: center;
+
+        line-height: 100px;
+        transform-style: preserve-3d;
+    }
+
+    li a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        /* text-align: center; */
+        text-decoration: none;
+    }
+
+    li a:nth-child(1) {
+        background-color: red;
+        transform: rotateX(-90deg) translateZ(50px);
+    }
+
+    li a:nth-child(2) {
+        background-color: blueviolet;
+        transform: translateZ(50px);
+    }
+
+    li:hover {
+        transform: rotateX(90deg);
+    }
+</style>
+
+<body>
+    <ul>
+        <li><a href="#">前面</a><a href="#">下面</a></li>
+        <li><a href="#">前面</a><a href="#">下面</a></li>
+        <li><a href="#">前面</a><a href="#">下面</a></li>
+    </ul>#
+</body>
+
+</html>
